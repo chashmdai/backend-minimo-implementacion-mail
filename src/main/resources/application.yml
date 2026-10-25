@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: siger-mail-graph-minimo
+  main:
+    banner-mode: "off"
+server:
+  address: 127.0.0.1
+  port: 8088
+siger:
+  mail:
+    tenant-id: ${SIGER_TENANT_ID:}
+    client-id: ${SIGER_CLIENT_ID:}
+    client-secret: ${SIGER_CLIENT_SECRET:}
+    sender: ${SIGER_MAIL_FROM:siger@defensorianinez.cl}
+    recipient: ${SIGER_TEST_TO:siger@defensorianinez.cl}
+    local-test-password: ${SIGER_TEST_PASSWORD:}
+logging:
+  level:
+    root: WARN
+    cl.nexbyte.siger.mail: INFO
